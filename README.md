@@ -1,6 +1,6 @@
 # CASE STUDY: Google Data Analytics Capstone: Bellabeat Case Study
 ##### Author: Tina Bui
-![image]
+
 ##### Date: June 30, 2022
 ###  [Introduction](#1-introduction)
 ###  [Product range](#2-productrange)
