@@ -63,6 +63,15 @@ Create a local folder containing 6 CSV tables that will be used in this analyse:
 
 <img width="911" alt="Screen Shot 2022-06-27 at 12 45 54 am" src="https://user-images.githubusercontent.com/89682120/175820015-0cd96076-8cf9-4ebd-8c42-1bba853cc288.png">
 
+Data Tools
+
+Google Sheets was used to cleaning the data. 
+The data was then analysed in Bigquery.
+The final visualization was created in Tableau public.
+
+
+
+
 
 
 
