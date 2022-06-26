@@ -91,17 +91,14 @@ Review Schema and preview data in each table before starting analyses
 
 
 Check for distinct ID:
- 
-``` 
+```
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.daily_Activity`;
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.dailyCalories` ;
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.daily_Intensities`;
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.daily_Steps`;
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.sleep_day`;
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.weight_log`;
-
 ```
-
 Results:
 33
 33
