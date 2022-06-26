@@ -5,7 +5,7 @@
 ###  [Product range](#2-product-range)
 ###  [Business Task](#3-business-task)
 ###  [About the Data](#4-about-the-data)
-###  [Data Analyst](#5-dataa-nalyst)
+###  [Data Analyse](#5-data-analyse)
 ###  [Visualization](#6-visualization)
 ###  [Findings](#7-findings)
 ###  [Recommendations](#7-recommendation)
@@ -25,7 +25,7 @@ Bellabeat offers a range of wireless wearable devices such as Leaf and Time. The
 
 Analyze smart device usage data in order to gain insight into how consumers are using their smart devices. From this, recommendations will be given to Urška Sršen and Bellabeat's marketing strategy team on how these trends can shape the company's marketing strategy. 
 
-## 4. Key Stakeholders
+Key Stakeholders
 
 [Back to Top](#author-tina-bui)
 
@@ -36,7 +36,7 @@ Sando Mur: Mathematician and Bellabeat's co-founder; a key member of the Bellabe
 Belllabeat’s marketing team
 
 
-## 5. About the Data
+## 4. About the Data
 
   Data source
      
@@ -65,10 +65,50 @@ Create a local folder containing 6 CSV tables that will be used in this analyse:
 
 Data Tools
 
-Google Sheets was used to cleaning the data. 
-The data was then analysed in Bigquery.
-The final visualization was created in Tableau public.
+- Google Sheets was used to cleaning the data. 
+- The data was then analysed in Bigquery.
+- The final visualization was created in Tableau public.
 
+Data Cleaning	
+
+- Created a Google Drive folder called Case Study. 
+- Uploaded the raw data to Google Drive. 
+- Clear formatting
+- Convert the SleepDate and Date column in sleepDay_merged.csv and weightLogInfo_merged.csv to custom Date and time formats Month/Date/Year
+- Remove time, AM, and PM indicators to keep the data consistent with other tables. 
+- Three duplicate records were identified in the sleepDay_merged table. 
+- Remove these duplicates using Google Sheet's cleanup suggestions function. 
+- Download the data in CSV format to prepare to upload to BigQuery
+
+## 5. Data Analyse
+
+[Back to Top](#author-tina-bui)
+
+
+- In BigQuery, create a Project named "Bellabeat". Upload and rename 6 CSV tables to the BigQuery platform.
+Review Schema and preview data in each table before starting analyses
+- Review Schema and preview data in each table before starting analyses
+
+
+Check for distinct ID:
+ 
+``` 
+SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.daily_Activity`;
+SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.dailyCalories` ;
+SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.daily_Intensities`;
+SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.daily_Steps`;
+SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.sleep_day`;
+SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.weight_log`;
+
+```
+
+Results:
+33
+33
+33
+33
+24
+8
 
 
 
