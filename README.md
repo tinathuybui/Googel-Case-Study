@@ -55,6 +55,16 @@ This Kaggle data set contains a personal fitness tracker from 30 Fitbit users. T
 
 <img width="1303" alt="Screen Shot 2022-06-27 at 12 38 26 am" src="https://user-images.githubusercontent.com/89682120/175819662-d85f866f-259a-4dd4-adef-36256c7ed433.png">
 
+  Datastore
+  
+[Back to Top](#author-tina-bui)
+
+Create a local folder containing 6 CSV tables that will be used in this analyse:
+
+<img width="911" alt="Screen Shot 2022-06-27 at 12 45 54 am" src="https://user-images.githubusercontent.com/89682120/175820015-0cd96076-8cf9-4ebd-8c42-1bba853cc288.png">
+
+
+
 
 
 
