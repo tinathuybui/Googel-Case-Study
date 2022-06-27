@@ -150,6 +150,9 @@ WHERE (sd.TotalMinutesAsleep/60) is NOT NULL;
 
 [5.2 a.csv](https://github.com/tinathuybui/Google-Case-Study/files/8992157/5.2.a.csv)
 
+[convertcsv.md](https://github.com/tinathuybui/Google-Case-Study/files/8992176/convertcsv.md)
+
+
 
 
 
