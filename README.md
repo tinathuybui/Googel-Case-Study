@@ -90,8 +90,8 @@ Review Schema and preview data in each table before starting analyses
 - Review Schema and preview data in each table before starting analyses
 
 
-Check for distinct ID:
-```
+5.1 Check for distinct ID:
+```sql
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.daily_Activity`;
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.dailyCalories` ;
 SELECT Count(Distinct ID) FROM `bellabeat-353112.Bella_beat.daily_Intensities`;
@@ -107,12 +107,48 @@ Results:
 24
 8
 
+5.2 Find the relationship between calories burned, daily activities, and hours of sleep:
 
+```sql
+SELECT dc.Calories,
+        dc.Id,
+        dc.ActivityDay,
+        da.TotalSteps,
+        da.VeryActiveDistance,
+        da.ModeratelyActiveDistance,
+        da.LightActiveDistance,
+        (sd.TotalMinutesAsleep/60) AS Sleephours
+FROM `bellabeat-353112.Bella_beat.dailyCalories` AS dc
+LEFT JOIN `bellabeat-353112.Bella_beat.daily_Activity` AS da
+   ON dc.Id = da.Id
+       AND dc.Calories = da.Calories
+LEFT JOIN `bellabeat-353112.Bella_beat.sleep_day` AS sd
+   ON dc.Id = sd.Id
+       AND dc.ActivityDay = sd.SleepDay;
+  ```
 
+Result returned some NULL data in the Sleephours column. Add WHERE clause to filter out all NULL data.
 
+```sql
+SELECT dc.Calories,
+        dc.Id,
+        dc.ActivityDay,
+        da.TotalSteps,
+        da.VeryActiveDistance,
+        da.ModeratelyActiveDistance,
+        da.LightActiveDistance,
+        (sd.TotalMinutesAsleep/60) AS Sleephours
+FROM `bellabeat-353112.Bella_beat.dailyCalories` AS dc
+LEFT JOIN `bellabeat-353112.Bella_beat.daily_Activity` AS da
+   ON dc.Id = da.Id
+       AND dc.Calories = da.Calories
+LEFT JOIN `bellabeat-353112.Bella_beat.sleep_day` AS sd
+   ON dc.Id = sd.Id
+       AND dc.ActivityDay = sd.SleepDay
+WHERE (sd.TotalMinutesAsleep/60) is NOT NULL;
+```
 
-
-
+[bquxjob_2c2d8cbe_1815b07ae8d.csv](https://github.com/tinathuybui/Google-Case-Study/files/8992072/bquxjob_2c2d8cbe_1815b07ae8d.csv)
 
 
 
