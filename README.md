@@ -148,7 +148,6 @@ LEFT JOIN `bellabeat-353112.Bella_beat.sleep_day` AS sd
 WHERE (sd.TotalMinutesAsleep/60) is NOT NULL;
 ```
 
-[bquxjob_2c2d8cbe_1815b07ae8d.csv](https://github.com/tinathuybui/Google-Case-Study/files/8992072/bquxjob_2c2d8cbe_1815b07ae8d.csv)
 
 
 
