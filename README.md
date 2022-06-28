@@ -5066,8 +5066,8 @@ Graph 1 shows users spent most of the day inactive on average
 Graph 2 shows a positive correlation between the calories burned per user and the total steps
 
 [Back to Top](#author-tina-bui)
+<img width="1635" alt="Screen Shot 2022-06-28 at 6 28 14 pm" src="https://user-images.githubusercontent.com/89682120/176132306-e6149f78-3158-4dc3-9794-4e89a8ee549c.png">
 
-![Sheet 2 (7)](https://user-images.githubusercontent.com/89682120/176125649-06ceaaf3-f2af-4b07-8a8d-0a5c35199736.png)
 
 Graph 3 shows a negative relationship between calories burn and sedentary minutes
 ![Sheet 3 (7)](https://user-images.githubusercontent.com/89682120/176126622-3a1d1ca4-0e83-4f55-9209-1e4f98416fd3.png)
@@ -5076,11 +5076,12 @@ Graph 4 shows users spent most of their time on Monday and least on Saturday sea
 
 [Back to Top](#author-tina-bui)
 
-![Sheet 1 (18)](https://user-images.githubusercontent.com/89682120/176127129-14d7ab15-cd10-41d7-82ed-f6f2d7803b57.png)
+<img width="836" alt="Screen Shot 2022-06-28 at 6 22 31 pm" src="https://user-images.githubusercontent.com/89682120/176131206-c7a53cd0-0de8-4a5d-8036-3c2631c4d2b9.png">
 
 Graph 5 shows users sleep more on Sunday and Wednesday and less on Thursday
 
-<img width="836" alt="Screen Shot 2022-06-28 at 6 22 31 pm" src="https://user-images.githubusercontent.com/89682120/176131206-c7a53cd0-0de8-4a5d-8036-3c2631c4d2b9.png">
+<img width="836" alt="Screen Shot 2022-06-28 at 6 22 31 pm" src="https://user-images.githubusercontent.com/89682120/176131739-30c706bc-aebf-4e9b-91be-56e8b89c0163.png">
+
 
 
 ## 7. Findings
