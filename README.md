@@ -2028,3 +2028,25 @@ WHERE (sd.TotalMinutesAsleep/60) is NOT NULL;
 </details>
 
 5.3 Find the relationship between maximum calories burned, daily activities, and hours of sleep:
+
+```sql
+SELECT dc.Calories,
+        dc.Id,
+        dc.ActivityDay,
+        da.TotalSteps,
+        da.VeryActiveDistance,
+        da.ModeratelyActiveDistance,
+        da.LightActiveDistance,
+        (sd.TotalMinutesAsleep/60) AS Sleephours
+FROM `bellabeat-353112.Bella_beat.dailyCalories` AS dc
+LEFT JOIN `bellabeat-353112.Bella_beat.daily_Activity` AS da
+   ON dc.Id = da.Id
+       AND dc.Calories = da.Calories
+LEFT JOIN `bellabeat-353112.Bella_beat.sleep_day` AS sd
+   ON dc.Id = sd.Id
+       AND dc.ActivityDay = sd.SleepDay
+WHERE dc.calories =
+   (SELECT MAX(Calories
+   FROM `bellabeat-353112.Bella_beat.dailyCalories`);
+ ```
+
