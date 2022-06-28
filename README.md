@@ -69,6 +69,11 @@ Data Tools
 - The data was then analysed in Bigquery.
 - The final visualization was created in Tableau public.
 
+<p align="center">
+<img width="664" alt="Screen Shot 2022-06-28 at 8 09 44 pm" src="https://user-images.githubusercontent.com/89682120/176154090-f9695c0a-4528-4ea0-91dd-92aba9930858.png">
+</p>
+
+
 Data Cleaning	
 
 - Created a Google Drive folder called Case Study. 
