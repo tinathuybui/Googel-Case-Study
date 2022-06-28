@@ -5052,3 +5052,9 @@ FROM `bellabeat-353112.Bella_beat.daily_Intensities`;
 |------------------|--------------------|-------------------|------------------|
 |991.21063829787272|192.8127659574468   |13.564893617021264 |21.164893617021296|
 </details>
+
+## 6. Visualization
+
+Graph 1 shows users spent most of the day inactive on average
+![Sheet 1 (17)](https://user-images.githubusercontent.com/89682120/176124665-b1f95a8e-ca94-4699-91b8-1cbdba42d6af.png)
+
