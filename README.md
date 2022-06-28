@@ -8,8 +8,8 @@
 ###  [Data Analyse](#5-data-analyse)
 ###  [Visualization](#6-visualization)
 ###  [Findings](#7-findings)
-###  [Recommendations](#7-recommendation)
-###  [Bibliograohy](#7-bibliograohy)
+###  [Recommendations](#8-recommendations)
+###  [Bibliography](#9-bibliography)
 
 ## 1. Introduction
 
@@ -4547,7 +4547,9 @@ GROUP BY  ActivityDay, SedentaryMinutes;
 </details>
 
 5.7 What is the average total asleep?
-  
+
+[Back to Top](#author-tina-bui)
+
 ```sql
 SELECT AVG(TotalMinutesAsleep/60) AS SleepHours
 FROM `bellabeat-353112.Bella_beat.sleep_day`;
@@ -5039,6 +5041,8 @@ FROM `bellabeat-353112.Bella_beat.weight_log`;
 
 5.12 What are the average sedentary minutes, active light minutes, and fairly active minutes, very active minutes?
 
+[Back to Top](#author-tina-bui)
+
 ```sql
 SELECT AVG(SedentaryMinutes) AS SedentaryMinutes,
         AVG(LightlyActiveMinutes) AS LightlyActiveMinutes,
@@ -5061,7 +5065,58 @@ Graph 1 shows users spent most of the day inactive on average
 
 Graph 2 shows a positive correlation between the calories burned per user and the total steps
 
+[Back to Top](#author-tina-bui)
+
 ![Sheet 2 (7)](https://user-images.githubusercontent.com/89682120/176125649-06ceaaf3-f2af-4b07-8a8d-0a5c35199736.png)
 
+Graph 3 shows a negative relationship between calories burn and sedentary minutes
+![Sheet 3 (7)](https://user-images.githubusercontent.com/89682120/176126622-3a1d1ca4-0e83-4f55-9209-1e4f98416fd3.png)
+
+Graph 4 shows users spent most of their time on Monday and least on Saturday seating
+
+[Back to Top](#author-tina-bui)
+
+![Sheet 1 (18)](https://user-images.githubusercontent.com/89682120/176127129-14d7ab15-cd10-41d7-82ed-f6f2d7803b57.png)
+
+Graph 5 shows users sleep more on Sunday and Wednesday and less on Thursday
+
+<img width="836" alt="Screen Shot 2022-06-28 at 6 22 31 pm" src="https://user-images.githubusercontent.com/89682120/176131206-c7a53cd0-0de8-4a5d-8036-3c2631c4d2b9.png">
 
 
+## 7. Findings
+[Back to Top](#author-tina-bui)
+- The dataset shows inconsistent numbers of distinct IDs between tables. The sleep_day and weight_log tables have the most inconsistency. Only 24% (8/33) of users record their weight and BMI data.
+- There is a positive relationship between total sleep and calories burned.
+- On the day that the user burned the maximum calories, they slept more than 8 hours and spent most of the time doing light activities but with a long walk distance (19,542 steps)
+- On the day that users burned the minimum calories, they did not exercise but spent most of the time sitting or inactive. 
+- There is a negative relationship between sedentary minutes and calories burned.
+- Users spent most of Monday or Friday inactive.
+- Users slept on average 6.9 hours per day which is slightly less than the recommended 7 - 9 hours of sleep per night for adults. 
+- Users slept the most on Sunday and Wednesday and slept less on Thursday.
+- Nineteen users slept more than 8 hours per day.
+- Users walk 7,637 steps on average per day, which is lower than the recommended 10,000 steps. The recommendation comes from the Centers for Disease Control and Prevention, setting 10,000 steps as a suitable goal for both male and female adults to maintain a healthy weight and improve or prevent certain health conditions such as obesity. 
+- The average BMI is 25.18 > 25. According to the BMI chart published on Forbes Health, this is considered overweight.
+- On average, people spent 81.3% of the day inactive, 15.8% doing light activities, 1,7% very active, and only 1.2% doing fairy activities
+
+## 8. Recommendations
+
+- Bellabeat should have a function allowing people to set goals for the hours of sleep and total steps per day. The app should have a recommended goal of a minimum of 7 hours of sleep and 10,000 steps per day.
+- Bellabeat should introduce a notification function to remind users. For example, send notifications (indicating red light) if the goal is not met.
+- To reduce the user's sedentary time, have the function to set reminders such as devices vibrating to remind users to exercise after a certain timeframe, such as 30 minutes, 1 hour or two times a day.
+- To encourage users to achieve their set goals, Bellabeat should introduce Bellabeat's point reward program. The company can offer, for example, if users achieve a certain point, they can have a discount when buying the next Bellabeat device. To make the reward even more attractive, the company should look for Sponsorship/Partner where Bellabeat points can be converted, such as Woolworth's Everyday Reward, which users can use to reduce their groceries bills. This can be a good marketing campaign to encourage people to exercise and eat healthy at the same time. At the current 5.1% inflation rate, this program would be an attractive incentive for Bellabeat's users.
+
+## 9. Bibliography 
+
+Acosta, K. (2021). BMI Chart For Men And Women: What You Need To Know About This Common Health Metric. [online] Forbes Health. Available at: https://www.forbes.com/health/body/bmi-chart-for-men-and-women/.
+
+Anon, (n.d.). Bellabeat - Sync your body and mind. [online] Available at: https://bellabeat.com/.
+
+Medical News Today (2021). How many steps should you take a day for fitness or weight loss? [online] Available at: https://www.medicalnewstoday.com/articles/how-many-steps-should-you-take-a-day.
+
+Raosoft (2009). Sample Size Calculator by Raosoft, Inc. [online] Raosoft.com. Available at: http://www.raosoft.com/samplesize.html.
+
+Reserve Bank Of Australia (2022). Measures of Consumer Price Inflation. [online] Reserve Bank of Australia. Available at: https://www.rba.gov.au/inflation/measures-cpi.html.
+
+SLEEP NEEDS ACROSS THE LIFESPAN. (n.d.). [online] Available at: https://www.sleephealthfoundation.org.au/files/pdfs/Sleep-Needs-Across-Lifespan.pdf.
+
+Statista. (2012). Fitbit active users 2012-2022| Statista. [online] Available at: https://www.statista.com/statistics/472600/fitbit-active-users/.
