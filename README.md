@@ -5056,5 +5056,12 @@ FROM `bellabeat-353112.Bella_beat.daily_Intensities`;
 ## 6. Visualization
 
 Graph 1 shows users spent most of the day inactive on average
-![Sheet 1 (17)](https://user-images.githubusercontent.com/89682120/176124665-b1f95a8e-ca94-4699-91b8-1cbdba42d6af.png)
+
+![Sheet 1 (17)](https://user-images.githubusercontent.com/89682120/176125146-3d44ab0a-fd1e-494c-8455-6d787544428b.png)
+
+Graph 2 shows a positive correlation between the calories burned per user and the total steps
+
+![Sheet 2 (7)](https://user-images.githubusercontent.com/89682120/176125649-06ceaaf3-f2af-4b07-8a8d-0a5c35199736.png)
+
+
 
