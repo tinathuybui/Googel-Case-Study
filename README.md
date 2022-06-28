@@ -1,6 +1,6 @@
 # Google Data Analytics Capstone: Bellabeat Case Study
-##### Author: Tina Bui
-##### Date: June 30, 2022
+# Author: Tina Bui
+## Date: June 30, 2022
 ###  [Introduction](#1-introduction)
 ###  [Product range](#2-product-range)
 ###  [Business Task](#3-business-task)
@@ -85,10 +85,9 @@ Data Cleaning
 [Back to Top](#author-tina-bui)
 
 
-- In BigQuery, create a Project named "Bellabeat". Upload and rename 6 CSV tables to the BigQuery platform.
-Review Schema and preview data in each table before starting analyses
+- In BigQuery, create a Project named "Bellabeat". 
+- Upload and rename 6 CSV tables to the BigQuery platform.
 - Review Schema and preview data in each table before starting analyses
-
 
 5.1 Check for distinct ID:
 ```sql
@@ -4990,7 +4989,7 @@ GROUP BY  Id;
 <details><summary>Click to view Result</summary>
   
 |Id        |SleepHours         |
-|----------|-------------------|                                                                                                                                                                                                                                                                                                               
+|----------|:-------------------|                                                                                                                                                                                                                                                                                                               
 |1503960366|11.666666666666666,9.9|                                                                                                                                                                                                                                                                                                       
 |1644430081|13.266666666666667|                                                                                                                                                                                                                                                                                                           
 |1844505072|10.733333333333333,12.033333333333333,9.8333333333333339|                                                                                                                                                                                                                                                                     
