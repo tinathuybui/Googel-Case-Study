@@ -5080,7 +5080,7 @@ Graph 4 shows users spent most of their time on Monday and least on Saturday sea
 
 [Back to Top](#author-tina-bui)
 
-<img width="836" alt="Screen Shot 2022-06-28 at 6 22 31 pm" src="https://user-images.githubusercontent.com/89682120/176131206-c7a53cd0-0de8-4a5d-8036-3c2631c4d2b9.png">
+<img width="654" alt="Screen Shot 2022-06-29 at 3 52 34 pm" src="https://user-images.githubusercontent.com/89682120/176361674-2cc4c561-5461-4567-97a3-a87fb29e29ac.png">
 
 Graph 5 shows users sleep more on Sunday and Wednesday and less on Thursday
 
